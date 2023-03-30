@@ -33,24 +33,131 @@ nav ul li {
     margin :10px 20px
 }
 nav ul li a{
-    color:rgb(64, 40, 161);
+    color:#b99fd1;
     text-decoration: none;
     font-size:18px;
     position: relative;
     
 }
 
-nav ul li a ::after{
+nav ul li a::after{
     content:''; 
     width: 0;
     height: 3px;
-    background: #0066ff;
+    background: #8400ff;
     position:absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-
-nav ul li a :hover::after{
+nav ul li a:hover::after{
     width:100%
+}
+.header-text{
+    margin-top:3%;
+    font-size: 30px;
+    margin-left: 220px;
+    
+} 
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+    color:#b99fd1;
+}
+.header-text h1 span{
+    color:#8400ff; 
+}
+#forntend {
+    color: #b99fd1;
+    display: flex;
+    margin-left: 20px;
+  }
+  .header-textp{
+    margin-top: 60px;
+    font-size: 30px;
+    margin-left: 200px;
+} 
+
+/*--------- about -------*/
+
+#about {
+    padding :80px 0;
+    color :#ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap :wrap;
+}
+
+  .about-col-1{
+    flex-basis : 35%;
+  }
+  .about-col-1 img {
+    width :100%;
+    border-radius: 15px;
+}
+  about-col-2 {
+    flex-basis:60%
+  }
+  .sub-title{
+    font-size :60px;
+    font-weight:600;
+    color:#b99fd1
+  }
+
+#bio{
+    margin-top:20px;
+}
+.tab-titles{
+    display : flex;
+    margin: 20px 0 40px;
+    color :#8400ff
+}
+.tab-links {
+    margin-right:50px;
+    font-size:18px;
+    font-weight:500;
+    cursor: pointer;
+    position:relative;
+}
+
+.tab-links::after {
+    content:'';
+    width :0;
+    height:3px;
+    background:#8400ff;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+
+.tab-links.active-link::after{
+    width : 50%;
+}
+
+.tab-contents ul li {
+    list-style:none;
+    margin:10px 0;
+}
+.tab-contents ul li span {
+  color: #8400ff;
+  font-size:14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab {
+   display : block;
+}
+ #Skills{
+    color:#b99fd1;
+}
+#Experience{
+    color:#b99fd1;
+}
+#Education{
+    color:#b99fd1;
 }

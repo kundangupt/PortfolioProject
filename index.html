@@ -4,57 +4,93 @@
 <head>
     <title>Portfolio</title>
 </head>
-<link  rel="stylesheet" href="Style.css"/>
+
+<link rel="stylesheet" href="Style.css" />
+
 <body>
-    <div id ="header">
+    <div id="header">
         <div class="container">
             <nav>
-            <img  src= "Images/front end devolper.png" class="logo"/>
+                <img src="Images/front end devolper.png" class="logo" />
                 <ul>
-                    <li><a href ="#">Home</a></li>
-                    <li><a href ="#">About</a></li>
-                    <li><a href ="#">Services</a></li>
-                    <li><a href ="#">Portfolio</a></li>
-                    <li><a href ="#">Contact </a></li>
-                  
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact </a></li>
                 </ul>
             </nav>
-        </div>>
+            <div class="header-textp">
+                <p id="forntend">Front-End Devolper</p>
+            </div>
+            <div class="header-text">
+                <h1> Hi, I'm <br> <span>Kundan<span></h1>
+            </div>
+        </div>
+    </div>
+    <!------------- about ---------------->
+    <div id="about">
+        <div class=" container">
+            <div class="row">
+                <div class=" about-col-1">
+                    <img src="Images/About-Us.png" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> My Bio</h1>
+                    <p id="bio"> A Frontend Focused Web Developer building the Frontend of Website and Web <br>
+                        Application that leads to the success of the overall Product
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br></li>
+                            <li> <span>JavaScript</span></li>
+                            <li><span>React.js</span></li>
+                            <li><span> HTML/CSS</span></li>
+                            <li><span>Express.js</span></li>
+                            <li><span>Node.js</span></li>
+                            <li><span>RestAPI</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li> <span>2017-2019</span><br>Intership at Ambit switchgear Pvt.Ltd</li>
+                            <li><span>2019-2022</span><br> Front-End Developer at Ambit switchgearPvt.Ltd</li>
+                            <li><span> 2022-Present</span><br> React Developer at Organn TechnologyPvt.Ltd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2009-2010</span><br>High School From St.Therese's School<br></li>
+                            <li> <span>2010-2012</span><br>Intermidiate From NVIC College</li>
+                            <li><span>2012-2016</span><br> Electrical Engineering From West Bengal University Of
+                                Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
-    <h1  style ="color:blueviolet ">Welcome To Kundan Portfolio</h1>
-    <p>I Activily Doing My Project. Hera are My some Project which
-        I done in My career.
-    </p>
-    <hr>
-    <h1 style="color:blueviolet">This is biggest heading </h1>
-    <h2>this is second biggest</h2>
-    <p> Let me show noraml text </p>
-    <small>These are the my Project</small>
-    <hr>
-    <a href="www.google.com">Project</a>
-    <a href="www.google.com"> Project2</a>
-    <div>
-        <h4 style="color: blueviolet;">Here My List of Project</h4>
-        <ul>
-            <li> Project</li>
-            <li>Project2</li>
-            <li>Project3</li>
-        </ul>
-    </div>
-    <div>
-        <h4 style = " color:blueviolet">Here My List of Project</h4>
-        <ol>
-            <li>Project4</li>
-            <li>Project5</li>
-            <li>project6</li>
-        </ol>
-    </div>
-    <hr>
-    <div>
-        <img src="Images/Portfolio (1).svg" />
-    </div>
-    <hr>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function openTab(tabname) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 
 </html>

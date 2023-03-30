@@ -77,6 +77,39 @@
     </div>
     </div>
 
+    <!------------- Services------------>
+    <div id ="Services">
+        <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="Services-list">
+          <div>
+            <h2>JavaScript</h2>
+            <p>Fom Validation</p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <h2>React.js</h2>
+            <p> Dashboard</p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <h2>HTML/CSS</h2>
+            <p> Portfolio</p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <h2>Node.js</h2>
+            <p> CreateAPI</p>
+            <a href="#">learn More</a>
+          </div>
+          
+
+        </div>
+
+        </div>
+    </div>
+
+
     <script>
         var tabLinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -87,7 +120,7 @@
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classList.add("active-links");
+            event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>

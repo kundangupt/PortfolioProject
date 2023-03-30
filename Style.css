@@ -174,8 +174,42 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top:50px;
     color:#b99fd1;
-    margin-left: 60px;
+    margin-left: 130px;
+    
 }
 .sub-title{
-  margin-left: 220px;
+  margin-left: 130px;
+}
+
+.Services-list div {
+    background:#e6e2eb;
+    padding:40px;
+    font-size:13px;
+    font-weight:300;
+    border-right:10px;
+    margin-right: 80px;
+    border-radius: 5px;
+    transition:background 0.5s, transform 0.5s;
+}
+.Services-list div i{
+    font-size:30px;
+    margin-bottom:30px ;
+}
+.Services-list div a {
+    text-decoration: none;
+    color:#8400ff;
+    font-size: 12px;
+    margin-top: 20px;
+    display :inline-block;
+}
+
+.Services-list div:hover {
+    background: #8400ff;
+    transform:translateY(-10px);
+}
+
+/*---------------- porfolio---------------*/
+
+#portfolio{
+    padding: 50px 0;
 }

@@ -273,6 +273,10 @@ nav ul li a:hover::after{
 
 }
 
-.work:hover .layer {
+.work:hover.img{
+    transform:scale (1.1);
+}
+
+.work:hover.layer{
   height: 100%;
 }

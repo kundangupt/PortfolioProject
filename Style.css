@@ -219,7 +219,7 @@ nav ul li a:hover::after{
     color:#b99fd1;
     margin-left: 130px;
 }
-.work{
+/* .work{
     border-radius : 10px;
     position: relative;
     overflow:hidden; 
@@ -279,4 +279,4 @@ nav ul li a:hover::after{
 
 .work:hover.layer{
   height: 100%;
-}
+} */

@@ -216,41 +216,45 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top:50px;
-    color:#b99fd1;
-    margin-left: 130px;
+    margin-left:120px;
+    
+    
 }
-/* .work{
-    border-radius : 10px;
+ .Work{
+    border-radius:10px;
     position: relative;
     overflow:hidden; 
 }
-
-.work img{
-    width:20%;
-    height:40%;
-    border-radius:5px;
+ 
+.Work  img{
+    width :82%;
+    border-radius:10px;
     display:block;
-    transition: transform 0.5s ;
+    transition:transform 0.5s;
+    
     
 }
-  .layer{
-    width:23%;
-    height:40%;
-    background:linear-gradient(rgba(153, 132, 179, 0.6),#c2b3d1);
-    border-radius:5px;
+ 
+.layer{
+    width:85%;
+    height:100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),#c2b3d1);
+    border-radius:10px;
     position:absolute;
-    margin-left:10;
-    margin-top: -280px;
+    left:0;
+    bottom:0;
     overflow:hidden;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction:column;
+    padding :0 40px;
     text-align: center;
     font-size: 14px;
     color: #e0d9e7; 
     font-family:sans-serif ;
-    transition: height 0.5s ;
+    
+
     
 }  
 
@@ -259,6 +263,7 @@ nav ul li a:hover::after{
     margin-bottom:20px;
     color: white;
 }
+
 .layer a {
     margin-top:20px;
     color:#b99fd1;
@@ -272,11 +277,12 @@ nav ul li a:hover::after{
     text-align: center;
 
 }
-
-.work:hover.img{
-    transform:scale (1.1);
+.Work:hover img{
+    transform:translateY(-10px);
 }
 
-.work:hover.layer{
-  height: 100%;
-} */
+.Work:hover  .layer{
+    height:0px;
+    transition:2s;
+  
+} 

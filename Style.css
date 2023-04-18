@@ -298,7 +298,7 @@ nav ul li a:hover::after {
     font-size: 14px;
     color: #e0d9e7;
     font-family: sans-serif;
-    transition: top 0.5s;
+    transition: ease-in-out 0.5s;
 
 
 
@@ -330,7 +330,7 @@ nav ul li a:hover::after {
 
 .Work:hover .layer {
     height: 0%;
-    transition: 2s;
+    transition: ease-out 2s;
 
 }
 
@@ -434,4 +434,63 @@ form .btn2 {
     cursor: pointer;
     border-radius: 6px;
 
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #baabc7;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #e60e0e;
+}
+
+/*----------------- css for small screens-------------*/
+
+nav .fa {
+    
+    display:  none ;
+}
+
+@media  only screen  and ( max-width: 600px){
+    
+    #header {
+         background-image: url(Image/frontenddevolper.png);
+        }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }    
+    .header-text h1{
+        font-size: 30px;
+        color :#8400ff
+
+    }
+    nav .fa {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #d6d4db;
+        position: fixed;
+        top: 0;
+        right:0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 24px;
+    }
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }

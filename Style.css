@@ -390,14 +390,25 @@ nav ul li a:hover::after {
 }
 
 .Social-icons a:hover {
-    color: #542085;
-    transform: translateY(-5px);
+    color: #e6e6ee;
+    
 }
 
 .btn.btn2 {
-    display: inline-block;
-    background: #542085;
-}
+    
+        display: block;
+        /* margin: 50px auto; */
+        width: fit-content;
+        border: 1px solid #663296;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #ababab;
+        transition: background 1.5s;
+        margin-left: -6px;
+    
+    }
+
 
 .contact-right form {
     width: 100%;
